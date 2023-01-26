@@ -15,20 +15,68 @@ The credit card dataset from LendingClub was first cleaned and the training and 
 ![Unbalanced_data](https://github.com/Li11iana/Credit_Risk_Analysis/blob/main/unbalanced%20data.png)
 
 The dataset was then  evaluated using the following machine learning algorithms:
+
 ### Resampling Models
-1. Random Oversample
+1. Naive Random Oversample
+The first model tested was Naive Random Oversampling. After training and fitting the model the following parameters were obtained
+
 ![Naive Random Oversampling](https://github.com/Li11iana/Credit_Risk_Analysis/blob/main/Naive%20Random%20Oversampling.png)
+
+* Accuracy = 
+* True Positive (TP) = 
+* True Negative (TN) =
+* False Positive (FP) =
+* False Negative (FN) = 
+
+![Naive Random Oversampling Report](https://github.com/Li11iana/Credit_Risk_Analysis/blob/main/Naive%20Random%20Oversampling%20Classification%20Report.png)
+
 2. SMOTE Oversample
 
+![SMOTE Oversampling](https://github.com/Li11iana/Credit_Risk_Analysis/blob/main/Naive%20Random%20Oversampling.png)
+
+* Accuracy = 
+* True Positive (TP) = 
+* True Negative (TN) =
+* False Positive (FP) =
+* False Negative (FN) = 
+
+![SMOTE Oversampling Report](https://github.com/Li11iana/Credit_Risk_Analysis/blob/main/SMOTE%20Oversampling%20Classification%20Report.png)
+
 3. ClusterCentroids Undersample
+
+* Accuracy = 
+* True Positive (TP) = 
+* True Negative (TN) =
+* False Positive (FP) =
+* False Negative (FN) = 
 
 ### Combination Model
 4. SMOTEEN Over and Under Sample
 
+* Accuracy = 
+* True Positive (TP) = 
+* True Negative (TN) =
+* False Positive (FP) =
+* False Negative (FN) = 
+
 ### Ensemble Classifiers
 5. Balanced Random Forest Classifier
 
+
+* Accuracy = 
+* True Positive (TP) = 
+* True Negative (TN) =
+* False Positive (FP) =
+* False Negative (FN) = 
+
 6. Easy Ensemble Classifier
+
+
+* Accuracy = 
+* True Positive (TP) = 
+* True Negative (TN) =
+* False Positive (FP) =
+* False Negative (FN) = 
 
 ## Summary:
 The credit card dataset from LendingClub was first cleaned and the training and target variables prepared. The dataset was then  evaluated using three machine learning models using the following algorithms:
