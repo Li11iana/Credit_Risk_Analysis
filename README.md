@@ -137,10 +137,11 @@ A classification report of the Easy Ensemble Classification model shows how it p
 
 Classification Report Summary: 
 * __Precision__ = The model presents 0.07 precision when classifiyng high risk credit and contrastly 1.00 precision for low risk credit.
-* __Recall__ = The ratio of true classifications to the sum all events classified is the best out of all evaluated methods 0.91 for high risk (sensitivity) and 0.94 for low risk (specificity). The models presents adequate 
-* __F1 Score__ = The wieghted harmonic mean of precision and recall shows further contrast between the models ability to classify correctly with just 0.07 for the high risk and 0.95 for low risk credit.
+* __Recall__ = The ratio of true classifications to the sum all events classified is the best out of all evaluated methods 0.91 for high risk (sensitivity) and 0.94 for low risk (specificity). The model presents higher recall for both classes.
+* __F1 Score__ = The wieghted harmonic mean of precision and recall still shows some contrast between the two evaluated classes with a value of 0.14 for high risk and 0.97 for low risk credit.
 * __Support__ = The number of actual occurrences of the class high risk is 87 events while there were 17,118 low rish credit cases in the testing sample.
 
 
 ## Recommendation
-There is a recommendation on which model to use, or there is no recommendation with a justification (3 pt)
+* Easy Ensemble Classifier
+As described in the previous section the dataset unbalanced presented a real challenge, since most of the models could classify high risk credit scenarios with precision. Only the Easy Ensemble AdaBoost classifier model showed good performance for both classes and therefore is the one is being recomended to use as a tool to predict possible risk, however as shown throughout this project Credit Risk is a complex situation depending on multiple variables and the best model found still has room for improvement.
