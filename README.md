@@ -69,7 +69,7 @@ Classification report:
 * False Positive (FP) = 10,324
 * False Negative (FN) = 31
 
-A classification report of the Naive Random Oversampling model shows how it performed.
+A classification report of the Cluster Centroids Undersampling model shows how it performed.
 
 ![ClusterCentroids Undersampling Report](https://github.com/Li11iana/Credit_Risk_Analysis/blob/main/ClusterCentroids%20Undersampling%20Report.png)
 
@@ -82,40 +82,64 @@ Classification report:
 ### Combination Model
 4. SMOTEEN Over and Under Sample
 
-![MOTEENN Sampling](https://github.com/Li11iana/Credit_Risk_Analysis/blob/main/SMOTEENN%20Sampling.png)
+![SMOTEENN Sampling](https://github.com/Li11iana/Credit_Risk_Analysis/blob/main/SMOTEENN%20Sampling.png)
 
-* Accuracy = 
-* True Positive (TP) = 
-* True Negative (TN) =
-* False Positive (FP) =
-* False Negative (FN) = 
+* Accuracy = 0.545
+* True Positive (TP) = 73
+* True Negative (TN) = 9,699
+* False Positive (FP) = 7,405
+* False Negative (FN) = 28
+
+A classification report of the SMOTEENN Sampling Classification model shows how it performed.
 
 ![SMOTEENN Sampling Classification Report](https://github.com/Li11iana/Credit_Risk_Analysis/blob/main/SMOTEENN%20Sampling%20Classification%20Report.png)
+
+Classification Report Summary: 
+* __Precision__ = The model presents 0.01 precision when classifiyng high risk credit and contrastly 1.00 precision for low risk credit.
+* __Recall__ = The ratio of true classifications to the sum all events classified is relatively similar for high and low risk with 0.72 for the first one (sensitivity) and 0.57 for the latter (specificity).
+* __F1 Score__ = The wieghted harmonic mean of precision and recall shows further contrast between the models ability to classify correctly with just 0.02 for the high risk and 0.72 for low risk credit.
+* __Support__ = The number of actual occurrences of the class high risk is 101 events while there were 17104 low rish credit cases in the testing sample.
 
 ### Ensemble Classifiers
 5. Balanced Random Forest Classifier
 
 ![Balance Random Forest](https://github.com/Li11iana/Credit_Risk_Analysis/blob/main/Balance%20Random%20Forest.png)
 
-* Accuracy = 
-* True Positive (TP) = 
-* True Negative (TN) =
-* False Positive (FP) =
-* False Negative (FN) = 
+* Accuracy = 0.788
+* True Positive (TP) = 58
+* True Negative (TN) = 15,558
+* False Positive (FP) = 1,560
+* False Negative (FN) = 29
+
+A classification report of the Balance Random Forest Classification model shows how it performed.
 
 ![Balance Random Forest Report](https://github.com/Li11iana/Credit_Risk_Analysis/blob/main/Balance%20Random%20Forest%20Report.png)
 
+Classification Report Summary: 
+* __Precision__ = The model presents 0.04 precision when classifiyng high risk credit and contrastly 1.00 precision for low risk credit.
+* __Recall__ = The ratio of true classifications to the sum all events classified is significatevely better than previous models with 0.67 for high risk (sensitivity) and 0.91 for low risk (specificity). A considerable improvement in specificity.
+* __F1 Score__ = The wieghted harmonic mean of precision and recall shows further contrast between the models ability to classify correctly with just 0.07 for the high risk and 0.95 for low risk credit.
+* __Support__ = The number of actual occurrences of the class high risk is 87 events while there were 17,118 low rish credit cases in the testing sample.
+
 6. Easy Ensemble Classifier
+
 ![Easy Ensemble Classifier](https://github.com/Li11iana/Credit_Risk_Analysis/blob/main/Easy%20Ensemble%20Classifier.png)
 
-* Accuracy = 
-* True Positive (TP) = 
-* True Negative (TN) =
-* False Positive (FP) =
-* False Negative (FN) = 
+* Accuracy = 0.925
+* True Positive (TP) = 79
+* True Negative (TN) = 16,139
+* False Positive (FP) = 979
+* False Negative (FN) = 8
+
+A classification report of the Easy Ensemble Classification model shows how it performed
 
 ![Easy Ensemble Classifier Report](https://github.com/Li11iana/Credit_Risk_Analysis/blob/main/Easy%20Ensemble%20Classifier%20Report.png)
 
+Classification Report Summary: 
+* __Precision__ = The model presents 0.07 precision when classifiyng high risk credit and contrastly 1.00 precision for low risk credit.
+* __Recall__ = The ratio of true classifications to the sum all events classified is the best out of all evaluated methods 0.91 for high risk (sensitivity) and 0.94 for low risk (specificity). The models presents adequate 
+* __F1 Score__ = The wieghted harmonic mean of precision and recall shows further contrast between the models ability to classify correctly with just 0.07 for the high risk and 0.95 for low risk credit.
+* __Support__ = The number of actual occurrences of the class high risk is 87 events while there were 17,118 low rish credit cases in the testing sample.
 
 
 ## Recommendation
