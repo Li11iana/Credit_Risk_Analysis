@@ -143,5 +143,6 @@ Classification Report Summary:
 
 
 ## Recommendation
-* Easy Ensemble Classifier
+* Easy Ensemble Classifier.
+
 As described in the previous section the dataset unbalanced presented a real challenge, since most of the models could classify high risk credit scenarios with precision. Only the Easy Ensemble AdaBoost classifier model showed good performance for both classes and therefore is the one is being recomended to use as a tool to predict possible risk, however as shown throughout this project Credit Risk is a complex situation depending on multiple variables and the best model found still has room for improvement.
