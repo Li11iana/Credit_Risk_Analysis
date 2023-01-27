@@ -10,30 +10,34 @@ Since fortunately most of the loans are paid, the data available for Credit Risk
 * Evaluate and recommend the best model for credit risk classification analysis using Supervised Machine Learning
 
 
-## Results:
+## Results and Summary:
+
 The credit card dataset from LendingClub was first cleaned and the training and target variables prepared. As shown below, the studied data has unbalanced classes:
 ![Unbalanced_data](https://github.com/Li11iana/Credit_Risk_Analysis/blob/main/unbalanced%20data.png)
 
 The dataset was then  evaluated using the following machine learning algorithms:
 
 ### Resampling Models
-1. Naive Random Oversample
-The first model tested was Naive Random Oversampling. After training and fitting the model the following parameters were obtained
+#### Naive Random Oversample
+This first model tested was Naive Random Oversampling. After training and fitting the model the following parameters were obtained:
 
 ![Naive Random Oversampling](https://github.com/Li11iana/Credit_Risk_Analysis/blob/main/Naive%20Random%20Oversampling.png)
 
-* Accuracy = 
-* True Positive (TP) = 
-* True Negative (TN) =
-* False Positive (FP) =
-* False Negative (FN) = 
+* Accuracy = 0.66
+* True Positive (TP) = 73
+* True Negative (TN) = 10,264
+* False Positive (FP) = 6,840
+* False Negative (FN) = 28
+
+A classification report of the Naive Random Oversampling model shows how the model performed
 
 ![Naive Random Oversampling Report](https://github.com/Li11iana/Credit_Risk_Analysis/blob/main/Naive%20Random%20Oversampling%20Classification%20Report.png)
 
 Classification report: 
-*
-*
-*
+* Precision = The model presents 0.01 precision when classifiyng high risk credit and contrastly 1.00 precision for low risk credit.
+* Recall = The ratio of true classifications to the sum all events classified is relatively similar for high and low risk with 0.72 for the first one (sensitivity) and 0.60 for the latter (specificity)
+* F1 Score = The wieghted harmonic mean of precision and recall shows further contrast between the models ability to classify correctly with just 0.02 for the high risk and 0.72 for low risk credit.
+* Support = The number of actual occurrences of the class high risk is 101 events while there were 17104 low rish credit cases in the testing sample.
 
 2. SMOTE Oversample
 
@@ -101,15 +105,6 @@ Classification report:
 
 ![Easy Ensemble Classifier Report](https://github.com/Li11iana/Credit_Risk_Analysis/blob/main/Easy%20Ensemble%20Classifier%20Report.png)
 
-## Summary:
-The credit card dataset from LendingClub was first cleaned and the training and target variables prepared. The dataset was then  evaluated using three machine learning models using the following algorithms:
-1. Oversample:
-
-2. Undersample:
-
-3. Combination: 
-
-4. Ensemble Classifiers: Next, you’ll compare two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier
 
 
 ## Recommendation
