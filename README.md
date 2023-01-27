@@ -29,44 +29,55 @@ This first model tested was Naive Random Oversampling. After training and fittin
 * False Positive (FP) = 6,840
 * False Negative (FN) = 28
 
-A classification report of the Naive Random Oversampling model shows how the model performed
+A classification report of the Naive Random Oversampling model shows how it performed.
 
 ![Naive Random Oversampling Report](https://github.com/Li11iana/Credit_Risk_Analysis/blob/main/Naive%20Random%20Oversampling%20Classification%20Report.png)
 
 Classification report: 
-* Precision = The model presents 0.01 precision when classifiyng high risk credit and contrastly 1.00 precision for low risk credit.
-* Recall = The ratio of true classifications to the sum all events classified is relatively similar for high and low risk with 0.72 for the first one (sensitivity) and 0.60 for the latter (specificity)
-* F1 Score = The wieghted harmonic mean of precision and recall shows further contrast between the models ability to classify correctly with just 0.02 for the high risk and 0.72 for low risk credit.
-* Support = The number of actual occurrences of the class high risk is 101 events while there were 17104 low rish credit cases in the testing sample.
+* __Precision__ = The model presents 0.01 precision when classifiyng high risk credit and contrastly 1.00 precision for low risk credit.
+* __Recall__ = The ratio of true classifications to the sum all events classified is relatively similar for high and low risk with 0.72 for the first one (sensitivity) and 0.60 for the latter (specificity).
+* __F1 Score__ = The wieghted harmonic mean of precision and recall shows further contrast between the models ability to classify correctly with just 0.02 for the high risk and 0.72 for low risk credit.
+* __Support__ = The number of actual occurrences of the class high risk is 101 events while there were 17104 low rish credit cases in the testing sample.
 
 2. SMOTE Oversample
 
-![SMOTE Oversampling](https://github.com/Li11iana/Credit_Risk_Analysis/blob/main/Naive%20Random%20Oversampling.png)
+![SMOTE Oversampling.png](https://github.com/Li11iana/Credit_Risk_Analysis/blob/main/SMOTE%20Oversampling.png)
 
-* Accuracy = 
-* True Positive (TP) = 
-* True Negative (TN) =
-* False Positive (FP) =
-* False Negative (FN) = 
+* Accuracy = 0.658
+* True Positive (TP) = 63
+* True Negative (TN) = 11,844
+* False Positive (FP) = 5,260
+* False Negative (FN) = 38
+
+A classification report of the SMOTE Oversampling model shows how it performed.
 
 ![SMOTE Oversampling Report](https://github.com/Li11iana/Credit_Risk_Analysis/blob/main/SMOTE%20Oversampling%20Classification%20Report.png)
 
 Classification report: 
-*
-*
-*
+* __Precision__ = The model presents 0.01 precision when classifiyng high risk credit and contrastly 1.00 precision for low risk credit.
+* __Recall__ = The ratio of true classifications to the sum all events classified is relatively similar for high and low risk with 0.62 for the first one (sensitivity) and 0.69 for the latter (specificity).
+* __F1 Score__ = The wieghted harmonic mean of precision and recall shows further contrast between the models ability to classify correctly with just 0.02 for the high risk and 0.82 for low risk credit.
+* __Support__ = The number of actual occurrences of the class high risk is 101 events while there were 17104 low rish credit cases in the testing sample.
 
 3. ClusterCentroids Undersample
 
 ![ClusterCentroids Undersampling.png](https://github.com/Li11iana/Credit_Risk_Analysis/blob/main/ClusterCentroids%20Undersampling.png)
 
-* Accuracy = 
-* True Positive (TP) = 
-* True Negative (TN) =
-* False Positive (FP) =
-* False Negative (FN) = 
+* Accuracy = 0.545
+* True Positive (TP) = 70
+* True Negative (TN) = 6,780
+* False Positive (FP) = 10,324
+* False Negative (FN) = 31
+
+A classification report of the Naive Random Oversampling model shows how it performed.
 
 ![ClusterCentroids Undersampling Report](https://github.com/Li11iana/Credit_Risk_Analysis/blob/main/ClusterCentroids%20Undersampling%20Report.png)
+
+Classification report: 
+* __Precision__ = The model presents 0.01 precision when classifiyng high risk credit and contrastly 1.00 precision for low risk credit.
+* __Recall__ = The ratio of true classifications to the sum all events classified is relatively similar for high and low risk with 0.69 for the first one (sensitivity) and 0.40 for the latter (specificity).
+* __F1 Score__ = The wieghted harmonic mean of precision and recall shows further contrast between the models ability to classify correctly with just 0.01 for the high risk and bearly 0.57 for low risk credit.
+* __Support__ = The number of actual occurrences of the class high risk is 101 events while there were 17104 low rish credit cases in the testing sample.
 
 ### Combination Model
 4. SMOTEEN Over and Under Sample
